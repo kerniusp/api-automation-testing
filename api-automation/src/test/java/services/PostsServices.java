@@ -48,11 +48,40 @@ public class PostsServices {
 
         return given()
                 .body(post)
+                .when()
                 .post("/posts")
                 .then()
                 .extract().response();
     }
 
+    public Response updatePost(int id, Post post){
+
+        return given()
+                .body(post)
+                .when()
+                .put("/posts/" + id)
+                .then()
+                .extract().response();
+    }
+
+    public Response partiallyUpdatePost(int id, Post post){
+
+        return given()
+                .body(post)
+                .when()
+                .patch("/posts/" + id)
+                .then()
+                .extract().response();
+    }
+
+    public Response deletePostById(int id){
+
+        return given()
+                .when()
+                .delete("/posts/" + id)
+                .then()
+                .extract().response();
+    }
 
 
 

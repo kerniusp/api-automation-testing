@@ -2,15 +2,23 @@ package org.example.models;
 
 public class Post {
 
-    Integer id;
-    String title;
-    String body;
-    Integer userId;
+    private Integer id;
+    private String title;
+    private String body;
+    private Integer userId;
 
     public Post(String title, String body, Integer userId) {
         this.title = title;
         this.body = body;
         this.userId = userId;
+    }
+
+    public Post(String body, Integer userId) {
+        this.body = body;
+        this.userId = userId;
+    }
+
+    public Post() {
     }
 
     public Integer getId() {
