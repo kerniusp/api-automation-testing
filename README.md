@@ -1,3 +1,7 @@
+
+API Automation Testing Framework
+
+
 This project is an API automation testing framework built to practice and demonstrate automated testing of REST APIs.
 The goal of the project is to validate API functionality, response structure, and data correctness using automated tests.
 
@@ -28,17 +32,4 @@ Features Implemented
 -JSON schema validation
 -Testcontainers setup for isolated database testing
 
-Project Structure
 
-src
-├── models
-│ └── POJO classes used to map API responses
-│
-├── services
-│ └── Service layer that handles API requests
-│
-├── tests
-│ └── Test classes validating API endpoints
-│
-└── schemas
-└── JSON schema files used for response validation
