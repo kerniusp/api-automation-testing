@@ -1,5 +1,5 @@
 
-## API Automation Testing Framework
+# API Automation Testing Framework
 
 
 This project is an API automation testing framework built to practice and demonstrate automated testing of REST APIs.
@@ -7,7 +7,7 @@ The goal of the project is to validate API functionality, response structure, an
 
 The tests interact with the public API provided by JSONPlaceholder and verify endpoints such as posts, users, and comments.
 
-# Objectives:
+## Objectives:
 
 -Practice REST API automation testing
 
@@ -17,7 +17,7 @@ The tests interact with the public API provided by JSONPlaceholder and verify en
 
 -Use POJOs (models) for response
 
-# Technologies Used:
+## Technologies Used:
 
 -Java
 
@@ -34,7 +34,7 @@ The tests interact with the public API provided by JSONPlaceholder and verify en
 -Testcontainers (for database testing experiments)
 
 
-# Features Implemented:
+## Features Implemented:
 
 -API request automation
 
