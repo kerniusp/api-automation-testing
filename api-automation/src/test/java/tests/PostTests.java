@@ -22,6 +22,7 @@ public class PostTests extends BaseTest {
             .withPassword("test")
             .withInitScript("init.sql");
 
+
 //    @BeforeAll
 //    public static void setUpDatabase(){
 //        postgres.start();
