@@ -22,14 +22,14 @@ public class PostTests extends BaseTest {
             .withPassword("test")
             .withInitScript("init.sql");
 
-    @BeforeAll
-    public static void setUpDatabase(){
-        postgres.start();
-
-        System.setProperty("DB_URL",postgres.getJdbcUrl());
-        System.setProperty("DB_USER",postgres.getUsername());
-        System.setProperty("DB_PASS",postgres.getPassword());
-    }
+//    @BeforeAll
+//    public static void setUpDatabase(){
+//        postgres.start();
+//
+//        System.setProperty("DB_URL",postgres.getJdbcUrl());
+//        System.setProperty("DB_USER",postgres.getUsername());
+//        System.setProperty("DB_PASS",postgres.getPassword());
+//    }
 
     PostsServices postsServices = new PostsServices();
 
@@ -49,10 +49,7 @@ public class PostTests extends BaseTest {
 
         assertEquals(200,response.statusCode());
         assertFalse(posts.isEmpty());
-
-        posts.forEach(object -> {
-            System.out.println(object.getId() + " Title:" + object.getTitle() + " Body:" + object.getBody() + " UserId:" + object.getUserId());
-        });
+        assertEquals(100, posts.size());
 
     }
 
