@@ -7,7 +7,7 @@ The goal of the project is to validate API functionality, response structure, an
 
 The tests interact with the public API provided by JSONPlaceholder and verify endpoints such as posts, users, and comments.
 
-Objectives
+Objectives:
 
 -Practice REST API automation testing
 
@@ -17,22 +17,34 @@ Objectives
 
 -Use POJOs (models) for response
 
-Technologies Used
+Technologies Used:
 
 -Java
+
 -RestAssured
+
 -JUnit
+
 -Maven
+
 -Jackson (JSON parsing)
+
 -JSON Schema Validator
+
 -Testcontainers (for database testing experiments)
 
-Features Implemented
+
+Features Implemented:
 
 -API request automation
+
 -Response validation
+
 -Model-based JSON deserialization
+
 -JSON schema validation
+
 -Testcontainers setup for isolated database testing
+
 
 
