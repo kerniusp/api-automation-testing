@@ -10,8 +10,11 @@ The tests interact with the public API provided by JSONPlaceholder and verify en
 Objectives
 
 -Practice REST API automation testing
+
 -Validate API responses and data structures
+
 -Implement reusable test architecture
+
 -Use POJOs (models) for response
 
 Technologies Used
