@@ -27,11 +27,9 @@ The tests interact with the public API provided by JSONPlaceholder and verify en
 
 -Maven
 
--Jackson (JSON parsing)
-
 -JSON Schema Validator
 
--Testcontainers (for database testing experiments)
+
 
 
 ## Features Implemented:
@@ -43,8 +41,6 @@ The tests interact with the public API provided by JSONPlaceholder and verify en
 -Model-based JSON deserialization
 
 -JSON schema validation
-
--Testcontainers setup for isolated database testing
 
 
 
