@@ -16,21 +16,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class PostTests extends BaseTest {
 
-    static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:15-alpine")
-            .withDatabaseName("testdb")
-            .withUsername("test")
-            .withPassword("test")
-            .withInitScript("init.sql");
-
-
-//    @BeforeAll
-//    public static void setUpDatabase(){
-//        postgres.start();
-//
-//        System.setProperty("DB_URL",postgres.getJdbcUrl());
-//        System.setProperty("DB_USER",postgres.getUsername());
-//        System.setProperty("DB_PASS",postgres.getPassword());
-//    }
 
     PostsServices postsServices = new PostsServices();
 
